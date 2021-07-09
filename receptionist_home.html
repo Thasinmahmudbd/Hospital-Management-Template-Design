@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <!--icons | font awesome-->
+    <script src="https://kit.fontawesome.com/aafecdc4bf.js" crossorigin="anonymous"></script>
+    
+    <!--font | nunito-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet"> 
+
+    <!--global design-->
+    <link rel="stylesheet" href="Design/Global/global_design.css">
+    <link rel="stylesheet" href="Design/Global/form_design.css">
+
+    <!--basic design-->
+    <link rel="stylesheet" href="Design/Basic/reception_design.css">
+
+    <!--frame design-->
+    <link rel="stylesheet" href="Design/frame_design.css">
+
+    <!--responsive design-->
+    <link rel="stylesheet" href="Design/Responsive/reception_res.css">
+    <link rel="stylesheet" href="Design/Responsive/frame_res.css">
+
+    <!--javascript-->
+    <script src="Javascript/dropdown_menu.js"></script>
+
+
+    <title>MCGH Portal</title>
+
+
+
+</head>
+
+
+<body>
+
+    <!--frame-->
+    <div class="frame">
+
+        <!--frame left side-->
+        <div class="left_side">
+
+            <div class="left_side_top">
+
+                <p class="title">MCGH Portal</p>
+                <div class="line"></div>
+                <p class="user_name_id">Mr.A (RM001)</p>
+
+            </div>
+            
+            <ul class="list">
+
+<!-----------------------link---------------------->
+
+                <li class="link_item">
+                    <a href="receptionist_home.html" class="link">
+                        <i class="link_icons fas fa-window-maximize"></i>
+                        <span class="link_name"> Patient Entry </span>
+                    </a>
+                </li>
+
+                <li class="list_item">
+                    <a href="receptionist_list.html" class="link">
+                        <i class=" link_icons fas fa-th-list"></i>
+                        <span class="link_name"> Patients List </span>
+                    </a>
+                </li>
+
+<!--------------------link end---------------------->
+
+            </ul>
+
+        </div>
+
+        <!--frame right side-->
+        <div class="right_side">
+
+            <!--frame right side top-->
+            <div class="right_side_top">
+
+                <a href="javascript:void(0);" onclick="myFunction()">
+                    <i class="menu_btn fas fa-bars"></i>
+                </a>
+                <p class="page_type">Reception (Patient Info)</p>
+
+            </div>
+
+            <!--frame right side mobile menu links-->
+            <div id="myLinks" class="mobile_links">
+                <a class="mobile_link" href="receptionist_home.html">Patient Entry</a>
+                <a class="mobile_link" href="receptionist_list.html">Patients List</a>
+            </div>
+
+            <!--frame right side middle-->
+            <div class="right_side_middle">
+
+<!-----------------------content---------------------->
+
+                <form action="get" class="content_container patient_info_form">
+
+                    <div class="patient_form_element">
+
+                        <label for="patient_name" class="label">Patient's Name</label>
+                        <input type="text" class="input" name="patient_name" required>
+    
+                    </div>
+
+                    <div class="patient_form_element_one_is_to_three">
+    
+                        <div class="patient_form_element">
+        
+                            <label for="patient_gender" class="label">Patient's Gender</label>
+                            <select name="patient_gender" id="patient_gender" class="input">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="others">Others</option>
+                                <option value="child">Child</option>
+                            </select>
+        
+                        </div>
+
+                        <div class="patient_form_element">
+        
+                            <label for="patient_number" class="label">Cell Number</label>
+                            <input type="tel" class="input"  name="patient_number" required>
+        
+                        </div>
+
+                    </div>
+
+                    <div class="patient_form_element_one_is_to_three">
+    
+                        <div class="patient_form_element">
+        
+                            <label for="nid_type" class="label">NID Type</label>
+                            <select name="nid_type" id="nid_type" class="input">
+                                <option value="own">Own</option>
+                                <option value="guardian">Guardian</option>
+                            </select>
+        
+                        </div>
+
+                        <div class="patient_form_element">
+        
+                            <label for="nid_number" class="label">NID Number</label>
+                            <input type="tel" class="input"  name="nid_number" required>
+        
+                        </div>
+
+                    </div>
+    
+                    <div class="patient_form_element">
+    
+                        <input type="submit" class="btn patient_form_btn form_btn"  value="Select Doctor" name="select_doctor">
+    
+                    </div>
+
+                </form>
+
+<!--------------------content end---------------------->
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!--removable link-->
+    <p class="removable_link_text">This links are temporary, used to travel through the site: 
+        <a href="index.html" class="removable_link">Log in</a>,
+        <a href="receptionist_doctor_selection.html" class="removable_link">Select Doctor</a>.
+    </p>
+    <!--removable link end-->
+
+
+</body>
+</html>
