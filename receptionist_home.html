@@ -103,7 +103,69 @@
 
 <!-----------------------content---------------------->
 
+
+                <!--Search bar to search old patients-->
+                
+                <form action="" method="get" class="content_container patient_info_form">
+
+                    <div class="doctor_search_form_element">
+
+                        <label for="doctor_name_search" class="collected_info vanish_label">Search Old Patients</label>
+                        <input type="text" class="input" name="doctor_name_search" placeholder="Enter Patient id or cell" required>
+                        <button type="submit" class="btn form_btn" name="search_doctor">Search</button>
+
+                    </div>
+
+                </form>
+
+
+
+                <!--results if patient is old patient-->
+
+                <table class="frame_table">
+                    
+                    <tr class="frame_header">
+                        <th width="14%" class="frame_header_item">P-ID</th>
+                        <th width="17%" class="frame_header_item">Patient Name</th>
+                        <th width="14%" class="frame_header_item">Cell</th>
+                        <th width="17%" class="frame_header_item">Doctor</th>
+                        <th width="10%" class="frame_header_item">Fee</th>
+                        <th width="5%" class="frame_header_item">Disc</th>
+                        <th width="10%" class="frame_header_item">Total</th>
+                        <th width="8%" class="frame_header_item">Appointed</th>
+                        <th width="5%" class="frame_header_item">Action</th>
+                    </tr>
+
+                    <tr class="frame_rows">
+                        <td class="frame_data" data-label="P-ID">M2962021001</td>
+                        <td class="frame_data" data-label="Patient Name">Mr.B</td>
+                        <td class="frame_data" data-label="Cell">01985423614</td>
+                        <td class="frame_data" data-label="Doctor">Mrs.Z</td>
+                        <td class="frame_data" data-label="Fee">800</td>
+                        <td class="frame_data" data-label="Disc">5</td>
+                        <td class="frame_data" data-label="Total">760</td>
+                        <td class="frame_data" data-label="Appointed">Date</td>
+                        <td class="frame_action" data-label="Action">
+                            <a href="">
+                                <p class="table_btn">OK</p>
+                            </a>
+                        </td>
+                    </tr>
+
+                </table>
+
+                
+                
+                <!--gap-->
+
+                <div class="gap"></div>
+
+
+                <!--admit new patients-->
+
                 <form action="get" class="content_container patient_info_form">
+
+                    <p>New Patient Entry:</p>
 
                     <div class="patient_form_element">
 
