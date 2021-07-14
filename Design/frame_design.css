@@ -222,6 +222,39 @@
     cursor: pointer;
 }
 
+.table_basic_btn{
+    width:100%;
+    padding:8px 0px;
+    cursor: pointer;
+}
+
+.table_basic_btn:hover{
+    background-color: rgba(19, 20, 19, 0.589);
+}
+
 .table_btn:hover{
     background-color: rgb(19, 170, 26);
+}
+
+.table_item_green{
+    font-size: 1rem;
+    background-color: rgba(53, 233, 53, 0.76);
+    color:#fff;
+}
+
+.table_item_red{
+    font-size: 1rem;
+    background-color: rgba(233, 53, 53, 0.76);
+    color:#fff;
+}
+
+.table_item_yellow{
+    font-size: 1rem;
+    background-color: rgba(215, 233, 53, 0.76);
+    color:#fff;
+}
+
+.disable{
+    cursor: default;
+    pointer-events: none;        
 }
