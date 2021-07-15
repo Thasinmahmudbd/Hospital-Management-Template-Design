@@ -156,6 +156,30 @@
     transition: 300ms ease-in;
 }
 
+.log_out_btn{
+    display:grid;
+    align-self: center;
+    justify-self: center;
+    font-size: 20px;
+    cursor:pointer;
+    color:#fff;
+}
+
+.log_out_btn:hover::before{
+    content:"Log Out";
+    font-family: 'Nunito', sans-serif;
+    position:fixed;
+    width:100px;
+    right:0px;
+    display:grid;
+    align-self: center;
+    justify-self: center;
+    font-size: 16px;
+    cursor:pointer;
+    color:#fff;
+    transition: 100ms ease-in;
+}
+
 /* content */
 
 .right_side_middle{
